@@ -1,0 +1,39 @@
+<div style="width:1000px;margin-left: auto;margin-right: auto;">
+    <aside id="leftmenu">
+        <img src="assets/images/logo.jpg" />
+        <header>
+            <h4 style="text-align: center;">Explorez nos cakes</h4>
+        </header>
+        <input type="search" class="searchbox" placeholder="Search our store" />
+        <ul>
+            <li><a routerLink="/tousdetails">Tous</a></li>
+            <li><a href="#promos">Promotions</a></li>
+        </ul>
+    </aside>
+    <main id="main">
+        <button (click)="save()" type="button">J'aime</button>
+        <span id="favorite">{{ favoriteMessage }}</span>
+        <figure>
+            <img src="assets/images/cakes.jpg" width="600" alt="La vitrine de notre boutique" />
+            <figcaption>Vitrine de la boutique Cake's shop</figcaption>
+        </figure>
+        <article>
+            <header>
+                <h1 style="font-size:35px;color:#a593c2">Bienvenue à notre boutique !</h1>
+            </header>
+            <h2>Notre histoire</h2>
+            <p>
+                Pendant de nombreuses années, Cake Shop a préparé les gâteaux les plus délicieux chez eux en Tunisie.
+                En 2013, nous avons ouvert notre première boutique dans une petite rue charmante au cœur de Tunis.
+                ...
+            </p>
+            <hr>
+            <section id="promos">
+                <h3 style="font-family:verdana;">&nbsp;Nos promotions hebdomadaire</h3>
+                <h4>Cheese cake</h4>
+                0dt - 4 personnes<br>
+                <img src="assets/images/CHEESECAKE.JPG" width="500" alt="Cheesecake avec caramel" height="300" />
+            </section>
+        </article>
+    </main>
+</div>
